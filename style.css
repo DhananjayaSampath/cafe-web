@@ -1,4 +1,4 @@
-body {
+.main {
     background-image: url(cafe.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +25,7 @@ nav a{
     font-family: Poppins;
     font-weight: 500;
 }
+
 
 nav a:hover {
     color: rgb(72, 72, 235);
@@ -73,17 +74,41 @@ button {
     background-color: #28A745;
 }
 #visit:hover {
-    background-color: #259840;
+    background-color: #208738;
 }
 
 #order:hover {
-    background-color: #e95332;
+    background-color: #ab452e;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    color: #000000;
+    width: 100%;
+    justify-content: center;
+}
+
+.container p {
+     width: 500px;
+     text-align: center;
+     font-family: poppins;
+     font-size: 18px;
+     padding: 100px;
+}
+
+img {
+    width: 450px;
+    height: auto;
+    margin: 50px;
+    border: none;
+    border-radius: 50px;
 }
 
 .footer {
     background-color: #222;
     color: #eee;
-    padding:40px 0 20px;
+    padding:40px;
 }
 
 .footer-container {
@@ -158,4 +183,12 @@ input {
     padding-top: 15px;
     margin-top: 30px;
     font-size: 13px;
+}
+
+.form {
+    max-width: 1500px;
+}
+
+.form input {
+    width: 25%;
 }
