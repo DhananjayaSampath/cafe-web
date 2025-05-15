@@ -1,7 +1,7 @@
 .main {
     background-image: url(cafe.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     margin: 0;
 }
@@ -15,6 +15,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;
+    z-index: 999;
 }
 
 nav a{
@@ -83,7 +84,7 @@ button {
 
 .container {
     display: flex;
-    background-color: white;
+    background-color: #f5f0e6;
     color: #000000;
     width: 100%;
     justify-content: center;
@@ -185,10 +186,78 @@ input {
     font-size: 13px;
 }
 
-.form {
-    max-width: 1500px;
+.login-page {
+  background-image: url(cwlp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  box-sizing: border-box;
 }
 
-.form input {
-    width: 25%;
+.form-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: poppins;
 }
+
+.auth-container {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .auth-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .auth-container input {
+      width: 95%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .auth-container button {
+      width: 101%;
+      padding: 12px;
+      background-color: rgb(36, 36, 155);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .auth-container button:hover {
+      background-color: rgb(61, 61, 199);
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .toggle a {
+      color: rgb(37, 37, 184);
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .form-section {
+      display: none;
+    }
+
+    .form-section.active {
+      display: block;
+    }
