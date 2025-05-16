@@ -27,7 +27,6 @@ nav a{
     font-weight: 500;
 }
 
-
 nav a:hover {
     color: rgb(72, 72, 235);
 }
@@ -247,17 +246,83 @@ input {
       margin-top: 15px;
     }
 
-    .toggle a {
-      color: rgb(37, 37, 184);
-      text-decoration: none;
-      font-weight: 600;
-      cursor: pointer;
-    }
+.toggle a {
+    color: rgb(37, 37, 184);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-    .form-section {
-      display: none;
-    }
+.form-section {
+    display: none;
+}
 
-    .form-section.active {
-      display: block;
-    }
+.form-section.active {
+    display: block;
+}
+
+.menu-page {
+    background-color: #fff8f0;
+    background-size: contain;
+    height: 100%;
+    margin: 0;
+}
+
+.menu-section {
+    padding: 60px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.category {
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    font-family: poppins;
+
+}
+
+#li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0d6cc;
+}
+
+.category h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0d6cc;
+    padding-bottom: 5px;
+    font-family: poppins;
+    color: #8b5e3c;
+}
+
+.menu-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: poppins;
+    color: #5b3a29;
+}
+
+.menu-download {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#menu-download {
+    background-color: #8b5e3c;
+    justify-content: center;
+    width: 250px;
+    border-radius: 5px;
+    font-family: poppins;
+}
+
+#menu-download:hover {
+    background-color: #a57149;
+}
