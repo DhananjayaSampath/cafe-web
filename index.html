@@ -6,36 +6,48 @@
         <title>Caffé Luna | Artisan Coffee & Cozy Vibes</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Parisienne&family=Italiana&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon-32x32.png" type="image/png">
     </head>
     <body class="main">
         <!--Navigation bar-->
         <nav>
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>  
-          <a href="index.html">Gallery</a>  
+          <a href="#gallery">Gallery</a>  
           <a href="#about">About Us</a>  
-          <a href="index.html">Contact Us</a>
+          <a href="#contact">Contact Us</a>
           <a href="login.html">Login</a>   
         </nav>
+        
         <!--Hero card-->
         <div class="hero-card">
             <h2>Welcome to Caffé Luna...</h2>
             <br>
             <p>Where moonlight meets espresso dreams.<br> slowly, breathe deeply, and let the night<br>linger in every cup.</p>
-            <button type="submit" id="visit">Visit Us</button>
+            <button type="submit" id="visit" onclick="window.open('https://maps.app.goo.gl/f36J7iaVc4XH9dmB9', '_blank')">Visit Us</button>
         </div>
 
-        <dev class="container" id="about">
-            <dev>
+        <div class="container" id="about">
+            <div class="image">
+                <img src="h2.png">
+            </div>
+            <div>
                 <br><br>
                 <p>Café Luna is your cozy escape in Kandy, where great coffee, homemade treats, and a warm atmosphere come together. Inspired by moonlit nights and meaningful moments, we serve handcrafted drinks and fresh bites in a space that feels like home. Whether you're catching up with friends or taking a quiet break, Café Luna is the perfect place to unwind.
 </p>
-            </dev>
-            <dev class="image">
-                <img src="e2.jpg">
-            </dev>
-                    
-        </dev>
+            </div>         
+        </div>
+        
+        <div class="gallery-container" id="gallery">
+            <img src="fi.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="ia.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="rnc.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="gt.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="cp.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="wtlpn.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="iim2.jpeg" alt="Coffee and moonlight ambiance">
+            <img src="lim.jpeg" alt="Coffee and moonlight ambiance">
+        </div>
 
         <!--Footer-->
         <footer class="footer">
@@ -46,7 +58,7 @@
                     <p>“Where coffee meets the moonlight and hearts slow down.”</p>
                 </dev>
 
-                <dev class="footer-section">
+                <dev class="footer-section" id="Contact">
                     <h3>Contact</h3>
                     <p>21, Sri Dalada Veediya,<br>Kandy, Sri Lanka</p>
                     <p>📞 (011) 423 1999</p>
@@ -58,10 +70,10 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Menu</a></li>
-                        <li><a href="index.html">Gallery</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#galary">Gallery</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="index.html">Contact Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </dev>
 

@@ -33,7 +33,7 @@ nav a:hover {
 
 .hero-card {
     background: rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: 96%;
     text-align: left;
     justify-content: center;
     padding: 200px 30px;
@@ -45,7 +45,7 @@ nav a:hover {
     font-size: 70px;
     font-family: 'Parisienne', cursive;
     font-weight: 900;
-    color: #fff;
+    color: #150d0d;
     margin-bottom: 0;
     text-shadow: 2px 2px 3px #1e0a0a;
 }
@@ -314,6 +314,9 @@ ul {
 
 #menu-download {
     background-color: #8b5e3c;
+    color: #f5f0e6;
+    font-size: 18px;
+    border: none;
     justify-content: center;
     width: 250px;
     border-radius: 5px;
@@ -322,4 +325,42 @@ ul {
 
 #menu-download:hover {
     background-color: #a57149;
+}
+
+.gallery-page {
+    background-color: #ffebdb;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallry-container {
+    display: grid;
+    max-width: 800px;
+    height: auto;
+    align-items: center;
+    
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.gallery-container img {
+    flex: 0 0 auto;
+      width: 250px;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+      scroll-snap-align: start;
+}
+
+.gallery-container img:hover {
+      transform: scale(1.05);
 }
